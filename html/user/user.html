@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+{{ template "header" .title}}
+<body>
+    <h1>{{ .title }}</h1>
+    <h1>Welcome user: {{ .user_id }}</h1>
+    <form class="inline" method="POST" action="/u/{{ .user_id }}">
+        <div class="form-group">
+            <button type="submit" class="btn btn-success">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
